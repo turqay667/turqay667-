@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+<!--<html>-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/80c4d78725.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"/>
+-<link href='https://unplug.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+<title>Customer Form</title>
+    {% load static %}
+<!--<link rel="stylesheet" href="checkout.css">-->
+    <link rel="stylesheet" href="{% static 'checkout.css' %}">
+</head>
+<style>
+
+</style>
+<body>
+
+
+
+<form action = "" method = "post">
+    {% csrf_token %}
+
+
+    {{formset}}
+
+
+<!--<a href="{ % url 'adrestd' %}">Add Address</a>-->
+
+   <h2>Checkout Form</h2>
+   <div class="row">
+    <div class="col-75">
+    <div class="container">s
+
+        <div class="row">
+            <div class="col-50">
+            <h3>Billing Address</h3>
+<!--                {{formset.management_form}}-->
+<!--                 <label for="">Address</label>-->
+<!--                {{formset.customer.name}}-->
+<!--                {{ check_form.as_table}}-->
+<!--                -->
+
+<!--                {{formset.customer.name}}-->
+
+<!--            <input type="text" id="name" name="name" placeholder="">-->
+<!--       {{check_form.address}}-->
+<!--                 <label for="">Country</label>-->
+<!--       {{check_form.country}}-->
+<!--                 <label for="">City</label>-->
+<!--                       {{check_form.city}}-->
+<!--                 <label for="">Zipcode</label>-->
+<!--                       {{check_form.zipcode}}-->
+<!--                 <label for="">Order</label>-->
+<!--                       {{check_form.order}}-->
+
+</form>
+
+            <div class="row">
+                <div class="col-50">
+<!--{{check_form.as_table}}-->
+<!--{{ form }}-->
+    </div>
+    </div>
+   </div>
+
+   <div class="col-50">
+       <h3>Payment</h3>
+<!--         <label for="">Name</label>-->
+
+<!--     {{check_form.name}}-->
+<!--      <label for="">Number</label>-->
+
+<!--     {{check_form.number}}-->
+<!--      <label for="">Exp Month</label>-->
+
+<!--     {{check_form.exp_month}}-->
+<!--     <label for="">Exp Year</label>-->
+
+<!--     {{check_form.exp_year}}-->
+<!--       <label for="">Accepted Cards</label>-->
+       <div class="icon-container">
+<!--        <i class="fa fa-cc-visa" style="color:navy;"></i>-->
+<!--        <i class="fa fa-cc-amex" style="color:blue;"></i>-->
+<!--        <i class="fa fa-cc-mastercard" style="color:red;"></i>-->
+<!--        <i class="fa fa-cc-discover" style="color:orange;"></i>-->
+       </div>
+
+
+<!--       <label for="cname">Name on Card</label>-->
+<!--            <input type="text" id="cname" name="cardname" placeholder="John More Doe">-->
+<!--            <label for="ccnum">Credit card number</label>-->
+<!--            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">-->
+<!--            <label for="expmonth">Exp Month</label>-->
+<!--            <input type="text" id="expmonth" name="expmonth" placeholder="September">-->
+<div class="row">
+ <div class="col-50">
+<!--<label for="">Exp Year</label>-->
+
+
+
+<!--                <input type="text" id="expyear" name="expyear" placeholder="2018">-->
+
+</form>
+              <div class="col-50">
+</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn" style="background-color:green;padding:12px,
+      margin:10px 0,
+      text-align:center,
+      border:none;
+      width:20%;
+      border-radius:3px;
+      cursor:pointer;
+      font-size:18px;">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:white"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p class="total">Total <span class="price" style="color:#fff"><b>$30</b></span></p>
+    </div>
+  </div>
+</div>
+    </body>
+
